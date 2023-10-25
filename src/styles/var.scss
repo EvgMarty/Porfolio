@@ -1,0 +1,21 @@
+:root {
+  --header-text: #fff;
+  --black: #171718;
+  --white: #fff;
+
+  /* Light mode */
+  --pageBg: #fff;
+  --scillsBg: #f1f3f5;
+  --text-color: #171718;
+
+  --title-1: #5c62ec;
+}
+
+/* Dark mode */
+[data-theme='dark'] {
+  --pageBg: #26292d;
+  --scillsBg: #3a4042;
+  --text-color: #fff;
+
+  --title-1: #e54646;
+}
