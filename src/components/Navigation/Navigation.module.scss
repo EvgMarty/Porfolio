@@ -1,0 +1,80 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/var.scss';
+
+.navList {
+  max-width: 100%;
+  padding-left: 25px;
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+
+  @media (max-width: 768px) {
+    opacity: 0;
+    visibility: hidden;
+    scale: (0);
+    width: 0;
+  }
+}
+
+.listItem {
+  @include flex;
+  gap: 3px;
+  position: relative;
+  border-radius: 4px;
+  color: var(--text-color);
+  padding: 10px;
+  line-height: 1.2;
+  font-weight: 500;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    height: 2px;
+    width: 0;
+    border-radius: 4px;
+    background: var(--text-color);
+    @include transition;
+  }
+
+  &:hover::before {
+    width: 90%;
+  }
+
+  &_active {
+    color: black;
+    background: #88ccca;
+  }
+}
+
+/// Mobile
+.navList_mobile {
+  transition: all .2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+  width: 200px;
+  border-radius: 6px;
+  background: var(--navigation-bg);
+  position: absolute;
+  right: 0;
+  bottom: -185px;
+}
+
+.listItem_mobile {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px 15px;
+  font-size: 25px;
+  color: var(--text-color);
+  font-size: 17px;
+  font-weight: 500;
+
+  &:hover {
+    background: var(--navigation-bg-hover);
+  }
+}

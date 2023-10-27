@@ -1,0 +1,84 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/var.scss';
+
+.menuBtn {
+  @include flex;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  border-radius: 6px;
+  padding: 5px;
+  border: 1px solid var(--border-color-menu_btn);
+  @include transition;
+  display: none;
+
+  &_active {
+    background: var(--bg-menu_btn);
+  }
+  &:hover {
+    background: var(--bg-menu_btn);
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
+}
+
+.burger {
+  position: relative;
+  width: 20px;
+  height: 2px;
+  background: var(--text-color);
+  border-radius: 4px;
+
+  &::after,
+  &::before {
+    @include transition;
+    content: '';
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: var(--text-color);
+    border-radius: 4px;
+  }
+
+  &::after {
+    top: -5.5px;
+  }
+
+  &::before {
+    top: 5.5px;
+  }
+
+  &_active {
+    position: relative;
+    width: 20px;
+    height: 2px;
+    background: var(--text-color);
+    border-radius: 4px;
+
+    &::after,
+    &::before {
+      @include transition;
+      content: '';
+      position: absolute;
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: var(--text-color);
+      border-radius: 4px;
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      transform: rotate(45deg);
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+    }
+    height: 0;
+  }
+}

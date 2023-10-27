@@ -1,21 +1,27 @@
 :root {
+  --fonts-heading: 'M PLUS Rounded 1c', sans-serif;
+  --fonts-text: 'M PLUS Rounded 1c', sans-serif;
   --header-text: #fff;
   --black: #171718;
   --white: #fff;
 
   /* Light mode */
   --pageBg: #fff;
-  --scillsBg: #f1f3f5;
   --text-color: #171718;
-
-  --title-1: #5c62ec;
+  --navBar-bg: #ffffff40;
+  --navigation-bg: #fff;
+  --navigation-bg-hover: #e2e8f0;
+  --border-color-menu_btn: #e2e8f0;
+  --bg-menu_btn: #e2e8f0;
 }
 
 /* Dark mode */
 [data-theme='dark'] {
   --pageBg: #26292d;
-  --scillsBg: #3a4042;
   --text-color: #fff;
-
-  --title-1: #e54646;
+  --navBar-bg: #202023;
+  --navigation-bg: #2d3748;
+  --navigation-bg-hover: #3d4756;
+  --border-color-menu_btn: rgba(255, 255, 255, 0.16);
+  --bg-menu_btn: #434347;
 }

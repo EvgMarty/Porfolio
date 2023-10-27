@@ -10,3 +10,7 @@
   left: 50%;
   transform: translateY(-50%);
 }
+
+@mixin transition(){
+  transition: all .3s ease-in;
+} 
