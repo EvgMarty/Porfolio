@@ -1,8 +1,10 @@
 import styles from './NavBar.module.scss';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import ContainerHeader from '../Containers/ContainerHeader/ContainerHeader';
 import MenuBtn from '../MenuBtn/MenuBtn';
-import { useState } from 'react';
 import Navigation from '../Navigation/Navigation';
+import Theme from '../Themes/Theme';
 
 const NavBar = () => {
   //Open menu
@@ -16,12 +18,15 @@ const NavBar = () => {
     <nav className={styles.navBar}>
       <ContainerHeader>
         <div className={styles.flexWrap}>
-          <div className={styles.logoWrap}>
+          <Link to="/" className={styles.logoWrap}>
             <img className={styles.logo} src="./img/logo.svg" alt="Logo" />
             <p>Yevhen Martyniuk</p>
-          </div>
+          </Link>
           <Navigation open={open} />
-          <MenuBtn open={open} openMenu={handleOpenMenu} />
+          <div className={styles.uaWrap}>
+            <Theme />
+            <MenuBtn open={open} openMenu={handleOpenMenu} />
+          </div>
         </div>
       </ContainerHeader>
     </nav>

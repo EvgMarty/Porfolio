@@ -26,12 +26,16 @@
   .logo {
     width: 40px;
     height: 40px;
+    filter: var( --filter-svg);
     @include transition;
   }
   p {
-    font-weight: bold;
+    color: var(--text-color);
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 800;
     font-size: 18px;
     line-height: 15px;
+    letter-spacing: -1px;
   }
 
   &:hover {
@@ -39,4 +43,9 @@
       transform: rotate(-25deg);
     }
   }
+}
+
+.uaWrap {
+  @include flex;
+  gap: 5px;
 }

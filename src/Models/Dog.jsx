@@ -2,7 +2,6 @@ import { useGLTF } from '@react-three/drei';
 import { useThree, useFrame } from '@react-three/fiber';
 import { useState, useEffect } from 'react';
 
-
 const Dog = (props) => {
   const { nodes, materials } = useGLTF('/vixelDog/scene.gltf');
   const [rotationSpeed, setRotationSpeed] = useState(0.7);
@@ -23,7 +22,7 @@ const Dog = (props) => {
     scene.rotation.y += rotationSpeed; // используя useState зажали параметры вращения
   });
 
-  //уменьшаем скорость вращение через время меняя состояние 
+  //уменьшаем скорость вращение через время меняя состояние
   useEffect(() => {
     const timeOutStepOne = setTimeout(() => {
       setRotationSpeed(0.09);

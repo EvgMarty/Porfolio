@@ -1,0 +1,50 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/var.scss';
+
+.themeBtn {
+  @include flex;
+  @include transition;
+  cursor: pointer;
+
+  width: 45px;
+  height: 45px;
+  border-radius: 6px;
+  padding: 5px;
+
+  background: var(--theme-btn-bg);
+  &:hover {
+    background: var(--theme-btn-bg-hover);
+  }
+  &.animation {
+    animation: slideIn 0.5s ease;
+  }
+}
+
+.moon {
+  color: white;
+  width: 20px;
+}
+
+.sun {
+  color: black;
+  width: 18px;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  25% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
