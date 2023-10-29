@@ -1,0 +1,23 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/var.scss';
+
+.button {
+  @include flex;
+  @include transition;
+  gap: 10px;
+  margin: 0 auto;
+  margin-top: 25px;
+  border-radius: 6px;
+  padding: 12px 25px;
+
+  font-family: var(--fonts-heading);
+  color: var(--text-color-btn);
+  background: var(--bg-button);
+  line-height: 1.2rem;
+  font-weight: 600;
+  font-size: 15px;
+
+  &:hover {
+    background: var(--bg-button-hover);
+  }
+}

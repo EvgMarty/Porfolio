@@ -8,6 +8,9 @@
   /* Light mode */
   --pageBg: #f0e7db;
   --text-color: #171718;
+  --text-color-btn: #fff;
+  --bg-button: #319795;
+  --bg-button-hover: #2a7e7c;
   --filter-svg: brightness(0) invert(0);
   --navBar-bg: #ffffff40;
   --navigation-bg: #fff;
@@ -25,6 +28,9 @@
 [data-theme='dark'] {
   --pageBg: #202023;
   --text-color: #fff;
+  --text-color-btn: #171718;
+  --bg-button: #81e6d9;
+  --bg-button-hover: #43dbc7;
   --filter-svg: brightness(0) invert(1);
   --navBar-bg: #20202380;
   --navigation-bg: #2d3748;
