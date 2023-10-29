@@ -1,6 +1,6 @@
 :root {
   --fonts-heading: 'M PLUS Rounded 1c', sans-serif;
-  --fonts-text: 'M PLUS Rounded 1c', sans-serif;
+  --fonts-text: 'Inter', sans-serif;
   --header-text: #fff;
   --black: #171718;
   --white: #fff;
@@ -17,6 +17,8 @@
   --bg-menu_btn: #e2e8f0;
   --theme-btn-bg: #805ad5;
   --theme-btn-bg-hover: #6639c7;
+  --bg-title: #ffffff5c;
+  --color-lick: #3d7aed;
 }
 
 /* Dark mode */
@@ -32,5 +34,6 @@
   --bg-menu_btn: #434347;
   --theme-btn-bg: #fbd38d;
   --theme-btn-bg-hover: #fdcb75;
-
+  --bg-title: #ffffff14;
+  --color-lick: #ff63c3;
 }

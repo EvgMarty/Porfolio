@@ -38,7 +38,7 @@ const Dog = (props) => {
 
   return (
     <group {...props} dispose={null}>
-      <group position={[0, -0.013, -0.01]} rotation={[-1.566, 0, 0]}>
+      <group position={[0, 0.800, -0.01]} rotation={[-1.566, 0, 0]}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <mesh
             geometry={nodes.Object_4.geometry}

@@ -7,9 +7,11 @@ import ContainerHeader from '../components/Containers/ContainerHeader/ContainerH
 
 const canvasStyle = {
   // контейнера холста
-  width: '640px',
-  height: '640px',
+  maxWidth: '640px',
+  maxHeight: '640px',
   touchAction: 'none',
+  position: 'absolute',
+  zIndex: 0,
 };
 
 const Models = () => {
