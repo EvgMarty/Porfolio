@@ -64,6 +64,7 @@
   text-decoration: underline;
   text-decoration-thickness: 3px;
 }
+
 .text {
   font-family: var(--fonts-text);
   font-size: 15px;
@@ -118,4 +119,14 @@
       }
     }
   }
+}
+
+.linkWrap {
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5px;
+  color: var(--link-color);
 }

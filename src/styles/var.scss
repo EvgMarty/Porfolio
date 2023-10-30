@@ -8,6 +8,9 @@
   /* Light mode */
   --pageBg: #f0e7db;
   --text-color: #171718;
+  --link-color: #2a7e7c;
+  --link-bg-color: #e6fffa;
+  --link-bg-color-active: #a3ffed;
   --text-color-btn: #fff;
   --bg-button: #319795;
   --bg-button-hover: #2a7e7c;
@@ -22,12 +25,16 @@
   --theme-btn-bg-hover: #6639c7;
   --bg-title: #ffffff5c;
   --color-lick: #3d7aed;
+  --scills-bg-color: #ffffff5c;
 }
 
 /* Dark mode */
 [data-theme='dark'] {
   --pageBg: #202023;
   --text-color: #fff;
+  --link-color: #43dbc7;
+  --link-bg-color: #81e6d91f;
+  --link-bg-color-active: #5ff4e01f;
   --text-color-btn: #171718;
   --bg-button: #81e6d9;
   --bg-button-hover: #43dbc7;
@@ -42,4 +49,5 @@
   --theme-btn-bg-hover: #fdcb75;
   --bg-title: #ffffff14;
   --color-lick: #ff63c3;
+  --scills-bg-color: #81e6d91f;
 }

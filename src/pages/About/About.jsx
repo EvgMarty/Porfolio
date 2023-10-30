@@ -1,9 +1,11 @@
 import styles from './About.module.scss';
 import { Link } from 'react-router-dom';
-import { BsChevronRight } from 'react-icons/bs';
+import { BsChevronRight, BsTelegram } from 'react-icons/bs';
 import { BiSolidCloudDownload } from 'react-icons/bi';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import ContainerMain from '../../components/Containers/ContainerMain/ContainerMain';
 import Button from '../../UI/Button/Button';
+import LinkBtn from '../../UI/LinkBtn/LinkBtn';
 
 const About = () => {
   return (
@@ -73,7 +75,27 @@ const About = () => {
 
         <div className={styles.aboutContent}>
           <h3 className={styles.title}>I ♥</h3>
-          <p></p>
+          <p className={styles.text}>
+            Sea, coffee, and playing on my PlayStation 4.
+          </p>
+        </div>
+
+        <div className={styles.aboutContent}>
+          <h3 className={styles.title}>On the web</h3>
+          <div className={styles.linkWrap}>
+            <LinkBtn to="https://github.com/EvgMarty">
+              <AiFillGithub />
+              @EvgMarty
+            </LinkBtn>
+            <LinkBtn to="https://www.linkedin.com/in/evgmarty/">
+              <AiFillLinkedin />
+              @evgmarty
+            </LinkBtn>
+            <LinkBtn to="https://t.me/martyynn">
+              <BsTelegram />
+              @martyynn
+            </LinkBtn>
+          </div>
         </div>
       </ContainerMain>
     </div>

@@ -2,5 +2,38 @@
 @import '../../styles/var.scss';
 
 .skills {
+
+}
+
+.scillsList {
+  @include flex;
+  flex-wrap: wrap;
+  gap: 15px 20px;
+}
+
+.skillsItem {
+  cursor: pointer;
+  @include flex;
+  @include transition;
+  background: var(--scills-bg-color);
+  border-radius: 6px;
   color: var(--text-color);
+  padding: 12px 15px;
+  gap: 5px;
+  width: 150px;
+
+  font-family: var(--fonts-text);
+  font-size: 12px;
+  font-weight: 500;
+  word-spacing: 3px;
+  text-indent: 1em;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.scillsImg {
+  width: 30px;
+  height: 30px;
 }

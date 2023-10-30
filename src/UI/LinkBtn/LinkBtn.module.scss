@@ -1,0 +1,23 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/var.scss';
+
+.linkBtn {
+  @include flex;
+  @include transition;
+  gap: 5px;
+  border-radius: 6px;
+  color: var(--link-color);
+  padding: 10px 15px;
+
+  font-family: var(--fonts-text);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+
+  &:hover {
+    background: var(--link-bg-color);
+  }
+  &:active {
+    background: var(--link-bg-color-active);
+  }
+}
