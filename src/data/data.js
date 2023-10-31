@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 export const works = [
   {
     id: uuidv4(),
+    slug: 'air-pods',
     name: 'AirPods',
     img: './img/projects/airPods.png',
     description: 'Dynamic landing page for headphones',
@@ -10,6 +11,7 @@ export const works = [
   {
     id: uuidv4(),
     name: 'SyncSln',
+    slug: 'sync-sln',
     img: './img/projects/syncSln.png',
     description:
       'Multi-page website for a company providing cloud storage services',
@@ -20,6 +22,7 @@ export const react = [
   {
     id: uuidv4(),
     name: 'Book Library',
+    slug: 'book-library',
     img: './img/projects/bookLibrary.png',
     description:
       'Application to add books manually, randomly or get books by api. Also the ability to filter books and search',
@@ -27,6 +30,7 @@ export const react = [
   {
     id: uuidv4(),
     name: 'ToDo React',
+    slug: 'todo-react',
     img: './img/projects/todo-react.png',
     description: 'Application for adding daily tasks',
   },
@@ -36,6 +40,7 @@ export const javaScript = [
   {
     id: uuidv4(),
     name: 'Hector',
+    slug: 'hector',
     img: './img/projects/hector.png',
     description:
       'Clothing store with multiple tabs, product rendering, shopping cart, popups and mobile adaptation',
@@ -43,12 +48,14 @@ export const javaScript = [
   {
     id: uuidv4(),
     name: 'Todo JS',
+    slug: 'todo-js',
     img: './img/projects/todo.png',
     description: 'Application for adding daily tasks',
   },
   {
     id: uuidv4(),
     name: 'Centarea',
+    slug: 'centarea',
     img: './img/projects/centarea.png',
     description:
       'Practiced js, product search, adding items to cart, favorites and displaying product cards, slider, tabs',
@@ -56,12 +63,14 @@ export const javaScript = [
   {
     id: uuidv4(),
     name: 'Old portfolio',
+    slug: 'old-portfolio',
     img: './img/projects/portfolio.png',
     description: 'Previous version of my portfolio before rebranding',
   },
   {
     id: uuidv4(),
     name: 'Delivery of rolls',
+    slug: 'delivery-of-rolls',
     img: './img/projects/basket-js.png',
     description:
       'Obychnaya cart. Add item to cart counting of goods in cart and order value',
@@ -69,6 +78,7 @@ export const javaScript = [
   {
     id: uuidv4(),
     name: 'Beauty salon',
+    slug: 'bauty-salon',
     img: './img/projects/salon.png',
     description: 'Multi-page layout of a website for providing beauty services',
   },

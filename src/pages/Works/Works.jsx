@@ -10,13 +10,14 @@ const generateProjectSections = (projectCategories) => {
       <div key={id} className={styles.worksWrap}>
         <h3 className={styles.title}>{title}</h3>
         <div className={styles.worksFlex}>
-          {projects.map(({ id, img, name, description }) => {
+          {projects.map(({ id, img, slug, name, description }) => {
             return (
               <ProjectCard
                 key={id}
                 img={img}
                 name={name}
                 description={description}
+                slug={slug}
               />
             );
           })}
