@@ -4,3 +4,27 @@
 .works {
   color: var(--text-color);
 }
+.worksWrap {
+  padding: 15px 0 50px 0;
+  border-bottom: 1px solid var(--scills-bg-color);
+}
+
+.title {
+  text-align: left;
+  padding: 8px 0;
+  font-family: var(-fonts-heading);
+  color: var(--text-color);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.worksFlex {
+  @include flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 25px;
+
+
+}
