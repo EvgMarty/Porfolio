@@ -1,0 +1,61 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/var.scss';
+
+.wrapper {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.breadСrumbs {
+  font-family: var(--fonts-text);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-lick) !important;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-skip-ink: auto;
+  }
+}
+
+.nameProject {
+  @include flex;
+  font-family: var(-fonts-heading);
+  color: var(--text-color);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  .arrow {
+    width: 11px;
+    height: 13px;
+    margin-right: 5px;
+  }
+}
+
+.year {
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: var(--scills-bg-color);
+  color: var(--text-color);
+  font-family: var(--fonts-text);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.imgProject {
+  width: 100%;
+  height: 130px;
+  background: #000;
+  border-radius: 15px;
+  height: 250px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}

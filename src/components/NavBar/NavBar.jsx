@@ -19,7 +19,7 @@ const NavBar = () => {
       <ContainerHeader>
         <div className={styles.flexWrap}>
           <Link to="/" className={styles.logoWrap}>
-            <img className={styles.logo} src="./img/logo.svg" alt="Logo" />
+            <img className={styles.logo} src="/img/logo.svg" alt="Logo" />
             <p>Yevhen Martyniuk</p>
           </Link>
           <Navigation open={open} />
