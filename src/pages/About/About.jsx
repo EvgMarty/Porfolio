@@ -68,7 +68,9 @@ const About = () => {
             </li>
           </ul>
           <Button>
-            Download CV
+            <a href="/CV_Yevhen-Martyniuk_Front-end_developer.pdf" download>
+              Download CV
+            </a>
             <BiSolidCloudDownload />
           </Button>
         </div>
