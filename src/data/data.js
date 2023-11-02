@@ -63,7 +63,7 @@ export const react = [
     slug: 'portfolio',
     year: '2023',
     stack: 'jsx, scss, react, react-three/fiber',
-    website: 'https://book-library-three-opal.vercel.app/',
+    website: 'https://porfolio-tau-self.vercel.app/',
     repository: 'https://github.com/EvgMarty/Porfolio',
     img: '/img/projects/newPortfolio.png',
     presentation: 'Rebranding Portfolio',
