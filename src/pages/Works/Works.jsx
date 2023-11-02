@@ -3,20 +3,19 @@ import ContainerMain from '../../components/Containers/ContainerMain/ContainerMa
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import { projectCategories } from '../../data/data';
 
-
 const generateProjectSections = (projectCategories) => {
   return projectCategories.map(({ title, id, projects }) => {
     return (
       <div key={id} className={styles.worksWrap}>
         <h3 className={styles.title}>{title}</h3>
         <div className={styles.worksFlex}>
-          {projects.map(({ id, img, slug, name, description }) => {
+          {projects.map(({ id, img, slug, name, presentation }) => {
             return (
               <ProjectCard
                 key={id}
                 img={img}
                 name={name}
-                description={description}
+                description={presentation}
                 slug={slug}
               />
             );

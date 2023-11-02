@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
 import styles from './ProjectCard.module.scss';
+import { Link } from 'react-router-dom';
 
 const ProjectCard = (props) => {
   const { name, img, slug, description } = props;

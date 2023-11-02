@@ -2,7 +2,7 @@ import styles from './Navigation.module.scss';
 import { NavLink, Link } from 'react-router-dom';
 import { AiFillGithub } from 'react-icons/ai';
 
-const Navigation = ({ open }) => {
+const Navigation = ({ open, closeMenu }) => {
   return (
     <ul className={`${open ? styles.navList_mobile : styles.navList}`}>
       <li>
@@ -17,6 +17,7 @@ const Navigation = ({ open }) => {
             }`
           }
           to="/"
+          onClick={() => closeMenu()}
         >
           About
         </NavLink>
@@ -33,6 +34,7 @@ const Navigation = ({ open }) => {
             }`
           }
           to="works"
+          onClick={() => closeMenu()}
         >
           Works
         </NavLink>
@@ -49,6 +51,7 @@ const Navigation = ({ open }) => {
             }`
           }
           to="skills"
+          onClick={() => closeMenu()}
         >
           Skills
         </NavLink>

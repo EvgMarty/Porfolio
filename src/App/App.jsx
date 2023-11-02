@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ScrollToTop from '../utils/ScrollToTop';
 import MainLayout from '../layouts/MainLayouts';
 import About from '../pages/About/About';
 import Works from '../pages/Works/Works';
@@ -10,6 +11,7 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <header className="App">
           <Routes>
             <Route path="/" element={<MainLayout />}>

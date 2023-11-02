@@ -14,15 +14,23 @@ const NavBar = () => {
     setOpen(!open);
   };
 
+  const handleCloseMenu = () => {
+    setOpen(false);
+  };
+
   return (
     <nav className={styles.navBar}>
       <ContainerHeader>
         <div className={styles.flexWrap}>
-          <Link to="/" className={styles.logoWrap}>
+          <Link
+            to="/"
+            className={styles.logoWrap}
+            onClick={() => handleCloseMenu()}
+          >
             <img className={styles.logo} src="/img/logo.svg" alt="Logo" />
             <p>Yevhen Martyniuk</p>
           </Link>
-          <Navigation open={open} />
+          <Navigation open={open} closeMenu={handleCloseMenu} />
           <div className={styles.uaWrap}>
             <Theme />
             <MenuBtn open={open} openMenu={handleOpenMenu} />

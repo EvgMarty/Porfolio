@@ -2,7 +2,7 @@ import styles from './About.module.scss';
 import { Link } from 'react-router-dom';
 import { BsChevronRight, BsTelegram } from 'react-icons/bs';
 import { BiSolidCloudDownload } from 'react-icons/bi';
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 import ContainerMain from '../../components/Containers/ContainerMain/ContainerMain';
 import Button from '../../UI/Button/Button';
 import LinkBtn from '../../UI/LinkBtn/LinkBtn';
@@ -95,6 +95,10 @@ const About = () => {
               <BsTelegram />
               @martyynn
             </LinkBtn>
+            <Button>
+              <AiOutlineMail />
+              <a href="mailto:mrtevgeniy@gmail.com">Contact me by mail</a>
+            </Button>
           </div>
         </div>
       </ContainerMain>
