@@ -11,6 +11,7 @@ const canvasStyle = {
   maxHeight: '640px',
   touchAction: 'none',
   position: 'absolute',
+  top: 0,
   zIndex: 0,
 };
 
