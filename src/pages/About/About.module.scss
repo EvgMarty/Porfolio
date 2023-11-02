@@ -31,6 +31,15 @@
     font-family: var(--fonts-text);
     font-weight: 500;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 25px;
+
+    h2,p{
+      text-align: center;
+    }
+  }
 }
 
 .imgWrap {
