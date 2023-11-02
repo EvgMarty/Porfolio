@@ -4,6 +4,8 @@
 .navBar {
   position: fixed;
   width: 100%;
+  top: 0;
+  left: 0;
   background: var(--navBar-bg);
   z-index: 2;
   -webkit-backdrop-filter: blur(10px);
@@ -26,7 +28,7 @@
   .logo {
     width: 40px;
     height: 40px;
-    filter: var( --filter-svg);
+    filter: var(--filter-svg);
     @include transition;
   }
   p {
