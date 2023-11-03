@@ -6,6 +6,7 @@ import Works from '../pages/Works/Works';
 import Skills from '../pages/Skills/Skills';
 import NotFound from '../pages/NotFound/NotFound';
 import ProjectPage from '../pages/ProjectPage/ProjectPage';
+import PageAnimation from '../PageAnimation/PageAnimation';
 
 const App = () => {
   return (
@@ -15,10 +16,38 @@ const App = () => {
         <header className="App">
           <Routes>
             <Route path="/" element={<MainLayout />}>
-              <Route index element={<About />} />
-              <Route path="works" element={<Works />} />
-              <Route path="works/:slug" element={<ProjectPage />} />
-              <Route path="skills" element={<Skills />} />
+              <Route
+                index
+                element={
+                  <PageAnimation key="about">
+                    <About />
+                  </PageAnimation>
+                }
+              />
+              <Route
+                path="works"
+                element={
+                  <PageAnimation key="works">
+                    <Works />
+                  </PageAnimation>
+                }
+              />
+              <Route
+                path="works/:slug"
+                element={
+                  <PageAnimation key="project">
+                    <ProjectPage />
+                  </PageAnimation>
+                }
+              />
+              <Route
+                path="skills"
+                element={
+                  <PageAnimation key="skills">
+                    <Skills />
+                  </PageAnimation>
+                }
+              />
             </Route>
             <Route path="*" element={<NotFound />} />
           </Routes>

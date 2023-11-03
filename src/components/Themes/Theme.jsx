@@ -1,35 +1,39 @@
 import styles from './Theme.module.scss';
+import { useState } from 'react';
+import { motion, useAnimation } from 'framer-motion';
 import { HiMiniMoon } from 'react-icons/hi2';
 import { FiSun } from 'react-icons/fi';
-import { useState } from 'react';
 
 const Theme = () => {
-  const [darcMode, setDarcMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
+  const controls = useAnimation();
 
-  const handleDarkMode = () => {
-    !darcMode
+  const handleDarkMode = async () => {
+    !darkMode
       ? document.body.setAttribute('data-theme', 'dark')
       : document.body.removeAttribute('data-theme');
 
-    setDarcMode(!darcMode);
+    setDarkMode(!darkMode);
 
-    const button = document.querySelector(`.${styles.themeBtn}`);
-    // Добавляем класс анимации
-    button.classList.add(styles.animation);
-    // Ждем завершения анимации, затем удаляем класс анимации
-    button.addEventListener('animationend', () => {
-      button.classList.remove(styles.animation);
-    });
+    // Здесь мы используем controls.start для запуска анимации
+    await controls.start({ y: [0, 100, -100, 0], opacity: [1, 0, 0, 1] });
   };
 
   return (
-    <div className={styles.themeBtn} onClick={handleDarkMode}>
-      {darcMode ? (
+    <motion.div
+      className={styles.themeBtn}
+      onClick={handleDarkMode}
+      // Используем animate для анимации элемента
+      animate={controls}
+      initial={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.4 }}
+    >
+      {darkMode ? (
         <FiSun className={styles.sun} />
       ) : (
         <HiMiniMoon className={styles.moon} />
       )}
-    </div>
+    </motion.div>
   );
 };
 

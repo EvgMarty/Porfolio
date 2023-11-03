@@ -7,6 +7,7 @@ import ContainerMain from '../../components/Containers/ContainerMain/ContainerMa
 import Button from '../../UI/Button/Button';
 import LinkBtn from '../../UI/LinkBtn/LinkBtn';
 
+
 const About = () => {
   return (
     <div className={styles.about}>

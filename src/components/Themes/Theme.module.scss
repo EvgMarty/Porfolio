@@ -12,11 +12,9 @@
   padding: 5px;
 
   background: var(--theme-btn-bg);
+  
   &:hover {
     background: var(--theme-btn-bg-hover);
-  }
-  &.animation {
-    animation: slideIn 0.5s ease;
   }
 }
 
@@ -28,23 +26,4 @@
 .sun {
   color: black;
   width: 18px;
-}
-
-@keyframes slideIn {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  25% {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  50% {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
