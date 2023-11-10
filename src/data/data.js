@@ -59,6 +59,19 @@ export const react = [
   },
   {
     id: uuidv4(),
+    name: 'Posts API',
+    slug: 'posts-api',
+    year: '2023',
+    stack: 'jsx, scss, react',
+    website: 'https://api-posts-virid.vercel.app/',
+    repository: 'https://github.com/EvgMarty/APIPosts',
+    img: '/img/projects/postsApi.png',
+    presentation: 'Getting the posts',
+    description:
+      'Get API . Conditional rendering, when loading after receiving posts render them. Error catching. Pagination.',
+  },
+  {
+    id: uuidv4(),
     name: 'Portfolio',
     slug: 'portfolio',
     year: '2023',
