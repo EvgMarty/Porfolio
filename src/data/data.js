@@ -113,6 +113,19 @@ export const javaScript = [
   },
   {
     id: uuidv4(),
+    name: 'Dictionaty',
+    slug: 'dictionaty',
+    year: '2023',
+    stack: 'html, scss, js',
+    website: 'https://evgmarty.github.io/Dictionary/',
+    repository: 'https://github.com/EvgMarty/Dictionary',
+    img: '/img/projects/dictionary.png',
+    presentation: 'Your dictionary',
+    description:
+      '"Dictionary" is a web-based word search application, providing the user with detailed information such as definitions, phonetics and audio pronunciation.',
+  },
+  {
+    id: uuidv4(),
     name: 'Centarea',
     slug: 'centarea',
     year: '2023',
