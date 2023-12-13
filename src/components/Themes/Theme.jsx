@@ -40,9 +40,9 @@ const Theme = () => {
       transition={{ duration: 0.4 }}
     >
       {darkMode ? (
-        <FiSun className={styles.sun} />
-      ) : (
         <HiMiniMoon className={styles.moon} />
+      ) : (
+        <FiSun className={styles.sun} />
       )}
     </motion.div>
   );
