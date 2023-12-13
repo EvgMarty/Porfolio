@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { ROUTES } from '../utils/routes';
 import ScrollToTop from '../utils/ScrollToTop';
 import MainLayout from '../layouts/MainLayouts';
 import About from '../pages/About/About';
@@ -15,17 +16,17 @@ const App = () => {
         <ScrollToTop />
         <header className="App">
           <Routes>
-            <Route path="/" element={<MainLayout />}>
+            <Route path={ROUTES.HOME} element={<MainLayout />}>
               <Route
                 index
                 element={
-                  <PageAnimation key="about">
+                  <PageAnimation key={'about'}>
                     <About />
                   </PageAnimation>
                 }
               />
               <Route
-                path="works"
+                path={ROUTES.WORKS}
                 element={
                   <PageAnimation key="works">
                     <Works />
@@ -33,7 +34,7 @@ const App = () => {
                 }
               />
               <Route
-                path="works/:slug"
+                path={ROUTES.WORKS_SLUG}
                 element={
                   <PageAnimation key="project">
                     <ProjectPage />
@@ -41,7 +42,7 @@ const App = () => {
                 }
               />
               <Route
-                path="skills"
+                path={ROUTES.SCILLS}
                 element={
                   <PageAnimation key="skills">
                     <Skills />

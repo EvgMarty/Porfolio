@@ -113,7 +113,7 @@ export const javaScript = [
   },
   {
     id: uuidv4(),
-    name: 'Dictionaty',
+    name: 'Dictionary',
     slug: 'dictionaty',
     year: '2023',
     stack: 'html, scss, js',
@@ -162,19 +162,6 @@ export const javaScript = [
     presentation: 'Checkout and shopping cart',
     description:
       'Checkout cart. Adding removing goods, conditional rendering, calculating the cost of goods.',
-  },
-  {
-    id: uuidv4(),
-    name: 'Beauty salon',
-    slug: 'bauty-salon',
-    year: '2023',
-    stack: 'html, scss, js',
-    website: 'https://evgmarty.github.io/Beauty_Salon/',
-    repository: 'https://github.com/EvgMarty/Beauty_Salon',
-    img: '/img/projects/salon.png',
-    presentation: 'Multi-page website',
-    description:
-      'Layout of a multi-page website for providing beauty services.',
   },
 ];
 
