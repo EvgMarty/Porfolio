@@ -28,6 +28,18 @@ export const works = [
     description:
       'Website of a German company engaged in providing cloud storage services. Developed the entire visible part of the site. As well as routing setup, data retrieval from forms, mobile adaptation.',
   },
+  {
+    id: uuidv4(),
+    name: 'Makeup',
+    slug: 'makeup',
+    year: '2023',
+    stack: 'jsx, scss, react, redux',
+    website: 'https://make-up-rho.vercel.app/',
+    repository: 'https://github.com/EvgMarty/MakeUp',
+    img: '/img/projects/make_up.png',
+    presentation: 'In the process of development ... ',
+    description: 'Website for makeup artist',
+  },
 ];
 
 export const react = [
