@@ -7,7 +7,6 @@ import ContainerMain from '../../components/Containers/ContainerMain/ContainerMa
 import Button from '../../UI/Button/Button';
 import LinkBtn from '../../UI/LinkBtn/LinkBtn';
 
-
 const About = () => {
   return (
     <div className={styles.about}>
@@ -29,15 +28,15 @@ const About = () => {
         <div className={styles.aboutContent}>
           <h3 className={styles.title}>About</h3>
           <p className={styles.text}>
-            Yevhen is a freelancer and front-end developer, based in Odesa with
-            a passionate about creating websites/applications. He has a knack
-            for everything related to product launches, from planning and design
-            to solving real-life problems with code. He devotes all his free
-            time to learning and improving his skills and backing them up with{' '}
+            I am a frontend developer and freelancer , living in Odessa and
+            passionate about building websites/web applications. I'm an expert
+            in everything related to front-end development, from planning and
+            design to solving real problems with code. I devote all my free time
+            to learning and improving my skills, backed up by {' '}
             <Link className={styles.link} to="works">
               projects
             </Link>
-            . When not online, he loves spending time with his family and cat.
+            . When I'm not online, I love spending time with my family and cat.
           </p>
           <Button>
             <Link to="works">My portfolio </Link>

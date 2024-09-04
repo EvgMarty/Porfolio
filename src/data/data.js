@@ -3,16 +3,16 @@ import { v4 as uuidv4 } from 'uuid';
 export const works = [
   {
     id: uuidv4(),
-    slug: 'air-pods',
-    name: 'AirPods',
-    year: '2023',
-    stack: 'html, css, js',
-    website: 'https://evgmarty.github.io/AirPods/',
-    repository: 'https://github.com/EvgMarty/AirPods',
-    img: '/img/projects/airPods.png',
-    presentation: 'Dynamic landing page for headphones',
+    name: 'Trialem',
+    slug: 'trialem',
+    year: '2024',
+    stack: 'html, scss, js, swiper, vite+vituum, ',
+    website: 'https://evgmarty.github.io/Trialem.github.io/',
+    repository: 'https://github.com/EvgMarty/Trialem',
+    img: '/img/projects/trialem.png',
+    presentation: 'Web site of a company providing bicycles for rent',
     description:
-      'Dynamics? YES!!! All content on the site changes when you select a product color.',
+      'Web site providing bicycle rental services. Made with the help of vite uses swiper adaptive and cross-browser site.',
   },
   {
     id: uuidv4(),
@@ -30,6 +30,19 @@ export const works = [
   },
   {
     id: uuidv4(),
+    slug: 'air-pods',
+    name: 'AirPods',
+    year: '2023',
+    stack: 'html, css, js',
+    website: 'https://evgmarty.github.io/AirPods/',
+    repository: 'https://github.com/EvgMarty/AirPods',
+    img: '/img/projects/airPods.png',
+    presentation: 'Dynamic landing page for headphones',
+    description:
+      'Dynamics? YES!!! All content on the site changes when you select a product color.',
+  },
+  {
+    id: uuidv4(),
     name: 'Makeup',
     slug: 'makeup',
     year: '2023',
@@ -37,8 +50,9 @@ export const works = [
     website: 'https://make-up-rho.vercel.app/',
     repository: 'https://github.com/EvgMarty/MakeUp',
     img: '/img/projects/make_up.png',
-    presentation: 'In the process of development ... ',
-    description: 'Website for makeup artist',
+    presentation: 'A website for a makeup artist. ',
+    description:
+      'Implemented the functionality of the appointment as well as adding and removing services or training at the master. ',
   },
 ];
 
@@ -48,7 +62,7 @@ export const react = [
     name: 'Book Library',
     slug: 'book-library',
     year: '2023',
-    stack: 'jsx, scss, react, redux/toolkit',
+    stack: 'jsx, scss, react, redux/toolkit, api/axios',
     website: 'https://book-library-three-opal.vercel.app/',
     repository: 'https://github.com/EvgMarty/BookLibraryApp',
     img: '/img/projects/bookLibrary.png',
@@ -74,7 +88,7 @@ export const react = [
     name: 'Posts API',
     slug: 'posts-api',
     year: '2023',
-    stack: 'jsx, scss, react',
+    stack: 'jsx, scss, react, api/axios',
     website: 'https://api-posts-virid.vercel.app/',
     repository: 'https://github.com/EvgMarty/APIPosts',
     img: '/img/projects/postsApi.png',
@@ -98,6 +112,19 @@ export const react = [
 ];
 
 export const javaScript = [
+  {
+    id: uuidv4(),
+    name: 'Burger',
+    slug: 'burger',
+    year: '2024',
+    stack: 'html, scss, js, gsap animation',
+    website: 'https://evgmarty.github.io/Burger/index.html',
+    repository: 'https://github.com/EvgMarty/Burger',
+    img: '/img/projects/burger.png',
+    presentation: 'Build your own burger',
+    description:
+      'Animated initial screen using gsap. Functionality of burger assembling, adding and removing products, as well as functionality of burger cost calculation and discount system depending on the total cost is implemented. There is also a popup window for ordering.',
+  },
   {
     id: uuidv4(),
     name: 'Hector',
@@ -128,26 +155,13 @@ export const javaScript = [
     name: 'Dictionary',
     slug: 'dictionaty',
     year: '2023',
-    stack: 'html, scss, js',
+    stack: 'html, scss, js, api',
     website: 'https://evgmarty.github.io/Dictionary/',
     repository: 'https://github.com/EvgMarty/Dictionary',
     img: '/img/projects/dictionary.png',
     presentation: 'Your dictionary',
     description:
       '"Dictionary" is a web-based word search application, providing the user with detailed information such as definitions, phonetics and audio pronunciation.',
-  },
-  {
-    id: uuidv4(),
-    name: 'Centarea',
-    slug: 'centarea',
-    year: '2023',
-    stack: 'html, scss, js',
-    website: 'https://evgmarty.github.io/Store/',
-    repository: 'https://github.com/EvgMarty/Store',
-    img: '/img/projects/centarea.png',
-    presentation: 'Practiced JavaSctipt',
-    description:
-      'Practical project. We practiced skills of conditional rendering and product search on the page.',
   },
   {
     id: uuidv4(),
@@ -185,12 +199,12 @@ export const projectCategories = [
   },
   {
     id: uuidv4(),
-    title: 'React project',
+    title: 'React projects',
     projects: react,
   },
   {
     id: uuidv4(),
-    title: 'JS project',
+    title: 'JS projects',
     projects: javaScript,
   },
 ];
@@ -235,6 +249,11 @@ export const scills = [
     id: uuidv4(),
     name: 'Webpack',
     img: '/img/scills/webpack.svg',
+  },
+  {
+    id: uuidv4(),
+    name: 'Vite',
+    img: '/img/scills/vite.svg',
   },
   {
     id: uuidv4(),
