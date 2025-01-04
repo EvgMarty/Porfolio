@@ -3,7 +3,7 @@ import styles from './Footer.module.scss';
 const Footer = () => {
   return (
     <div className={styles.footer}>
-      <p>© 2023 Yevhen Martyniuk. All Rights Reserved.</p>
+      <p>© 2025 Yevhen Martyniuk. All Rights Reserved.</p>
     </div>
   );
 };
