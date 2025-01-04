@@ -32,7 +32,7 @@ const About = () => {
             passionate about building websites/web applications. I'm an expert
             in everything related to front-end development, from planning and
             design to solving real problems with code. I devote all my free time
-            to learning and improving my skills, backed up by {' '}
+            to learning and improving my skills, backed up by{' '}
             <Link className={styles.link} to="works">
               projects
             </Link>
@@ -63,8 +63,14 @@ const About = () => {
               completed a full-fledged course on React/Redux.
             </li>
             <li>
-              <span className={styles.teg}>2023 to present</span> Working as a
-              freelancer
+              <span className={styles.teg}>2023</span>
+              Working as a freelancer on the
+              <span className={styles.focus}>Upwork</span> platform.
+            </li>
+            <li>
+              <span className={styles.teg}>2024 to present</span> Working as a
+              frontend developer in the company {' '}
+              <span className={styles.focus}>Profi Development</span>.
             </li>
           </ul>
           <Button>

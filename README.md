@@ -1,38 +1,88 @@
-# My new React Portfolio
+# Portfolio Website
 
-## Available Scripts
+## About the Project
 
-In the project directory, you can run:
+This is my personal portfolio website, showcasing my skills, projects, and achievements as a frontend developer. The site demonstrates my expertise in responsive design, 3D modeling, and modern web development.
 
-### `npm start`
+## Built With
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React.js
+- React Router DOM
+- Framer Motion (for animations)
+- React Icons (for icons)
+- Sass (for styling)
+- @react-three/fiber and @react-three/drei (for 3D rendering)
+- UUID (for generating unique IDs)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Fully responsive design for various devices
+- 3D models and animations using React Three.js
+- Smooth transitions and animations with Framer Motion
+- Dynamic routing with React Router
+- Interactive sections to showcase projects and skills
+- Contact form for easy communication
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Live Demo
 
-### `npm run build`
+[Visit Portfolio Website](https://porfolio-tau-self.vercel.app/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To run this project locally:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
 
-### `npm run eject`
+   ```bash
+   git clone https://github.com/EvgMarty/Porfolio
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```
+2. Navigate to the project directory:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   cd Portfolio
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```
+3. Install dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm install
+
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   
+   ```
+
+## Dependencies
+
+The project uses the following dependencies:
+
+2. `@react-three/drei`: ^9.88.7
+3. `@react-three/fiber`: ^8.15.8
+4. `@react-three/gltfjsx`: ^4.3.4
+5. `@testing-library/jest-dom`: ^5.17.0
+6. `@testing-library/react`: ^13.4.0
+7. `@testing-library/user-event`: ^13.5.0
+8. `framer-motion`: ^10.16.4
+9. `react`: ^18.2.0
+10. `react-dom`: ^18.2.0
+11. `react-icons`: ^4.11.0
+12. `react-router-dom`: ^6.17.0
+13. `react-scripts`: 5.0.1
+14. `sass`: ^1.69.4
+15. `uuid`: ^9.0.1
+16. `web-vitals`: ^2.1.4
+
+## Author
+
+This portfolio was created and developed by:
+
+- **Yevhen Martyniuk**  
+  Frontend Developer with a passion for creating modern and user-friendly web applications.
+
+### Contacts:
+
+- GitHub: [EvgMarty](https://github.com/EvgMarty)
+- LinkedIn: [Yevhen Martyniuk](https://www.linkedin.com/in/evgmarty/)
